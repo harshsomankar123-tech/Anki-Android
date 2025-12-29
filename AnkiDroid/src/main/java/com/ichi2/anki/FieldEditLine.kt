@@ -136,10 +136,6 @@ class FieldEditLine : FrameLayout {
     val lastViewInTabOrder: View
         get() = binding.expandButton
 
-    fun loadState(state: AbsSavedState) {
-        onRestoreInstanceState(state)
-    }
-
     override fun dispatchSaveInstanceState(container: SparseArray<Parcelable>) {
         dispatchFreezeSelfOnly(container)
     }
